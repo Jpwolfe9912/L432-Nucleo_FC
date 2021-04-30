@@ -1,0 +1,183 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 5300 3350
+NoConn ~ 5300 3450
+NoConn ~ 6500 3400
+NoConn ~ 5300 3850
+NoConn ~ 5300 3050
+$Comp
+L power:GND #PWR?
+U 1 1 608D4080
+P 5850 4600
+AR Path="/608D4080" Ref="#PWR?"  Part="1" 
+AR Path="/608CDC7C/608D4080" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 5850 4350 50  0001 C CNN
+F 1 "GND" H 5855 4427 50  0000 C CNN
+F 2 "" H 5850 4600 50  0001 C CNN
+F 3 "" H 5850 4600 50  0001 C CNN
+	1    5850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4600 5850 4600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 608D4087
+P 6050 2850
+AR Path="/608D4087" Ref="#PWR?"  Part="1" 
+AR Path="/608CDC7C/608D4087" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6050 2700 50  0001 C CNN
+F 1 "+3V3" H 6100 3000 50  0000 C CNN
+F 2 "" H 6050 2850 50  0001 C CNN
+F 3 "" H 6050 2850 50  0001 C CNN
+	1    6050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2850 6050 2850
+$Comp
+L power:+5V #PWR?
+U 1 1 608D408E
+P 5850 2850
+AR Path="/608D408E" Ref="#PWR?"  Part="1" 
+AR Path="/608CDC7C/608D408E" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 5850 2700 50  0001 C CNN
+F 1 "+5V" H 5850 3000 50  0000 C CNN
+F 2 "" H 5850 2850 50  0001 C CNN
+F 3 "" H 5850 2850 50  0001 C CNN
+	1    5850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 608D4094
+P 5750 2850
+AR Path="/608D4094" Ref="#PWR?"  Part="1" 
+AR Path="/608CDC7C/608D4094" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5750 2700 50  0001 C CNN
+F 1 "VCC" H 5650 3000 50  0000 C CNN
+F 2 "" H 5750 2850 50  0001 C CNN
+F 3 "" H 5750 2850 50  0001 C CNN
+	1    5750 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 4050
+NoConn ~ 5300 3950
+$Comp
+L MCU_Module:NUCLEO32-L432KC U?
+U 1 1 608D409E
+P 5900 3750
+AR Path="/608D409E" Ref="U?"  Part="1" 
+AR Path="/608CDC7C/608D409E" Ref="U2"  Part="1" 
+F 0 "U2" H 5900 2811 50  0000 C CNN
+F 1 "NUCLEO32-L432KC" H 5900 2720 50  0000 C CNN
+F 2 "Footprints:MODULE_NUCLEO-L432KC" H 5850 4700 50  0001 C CNN
+F 3 "" H 5800 4600 50  0001 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 2850
+Connection ~ 5850 4600
+Text HLabel 6500 3600 2    50   Input ~ 0
+SPI1_CS
+Text HLabel 6500 3700 2    50   Input ~ 0
+SPI1_SCK
+Text HLabel 6500 3800 2    50   Input ~ 0
+SPI1_MISO
+Text HLabel 6500 3900 2    50   Input ~ 0
+SPI1_MOSI
+Text HLabel 6500 4100 2    50   Input ~ 0
+I2C1_SCL
+Text HLabel 6500 4200 2    50   Input ~ 0
+I2C1_SDA
+Text HLabel 6500 3200 2    50   Input ~ 0
+TIM2_CH1
+Text HLabel 6500 3300 2    50   Input ~ 0
+TIM2_CH2
+Text HLabel 6500 3500 2    50   Input ~ 0
+TIM2_CH4
+Text HLabel 6500 4000 2    50   Input ~ 0
+TIM1_CH1
+Text HLabel 6500 4300 2    50   Input ~ 0
+CAN1_RX
+Text HLabel 6500 4400 2    50   Input ~ 0
+CAN1_TX
+Text HLabel 5300 4250 0    50   Input ~ 0
+USART1_RX
+Text HLabel 5300 4150 0    50   Input ~ 0
+USART1_TX
+Text HLabel 5300 3750 0    50   Input ~ 0
+CURR
+$Comp
+L power:VCC #PWR?
+U 1 1 608E7AD4
+P 7700 3250
+AR Path="/608E7AD4" Ref="#PWR?"  Part="1" 
+AR Path="/608CDC7C/608E7AD4" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 7700 3100 50  0001 C CNN
+F 1 "VCC" H 7600 3400 50  0000 C CNN
+F 2 "" H 7700 3250 50  0001 C CNN
+F 3 "" H 7700 3250 50  0001 C CNN
+	1    7700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 608E7FC4
+P 7700 3350
+F 0 "R3" H 7759 3396 50  0000 L CNN
+F 1 "10k" H 7759 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7700 3350 50  0001 C CNN
+F 3 "~" H 7700 3350 50  0001 C CNN
+	1    7700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 608E8627
+P 7900 3550
+F 0 "R4" V 7975 3550 50  0000 C CNN
+F 1 "1k" V 8050 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7900 3550 50  0001 C CNN
+F 3 "~" H 7900 3550 50  0001 C CNN
+	1    7900 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 3550 7700 3550
+Wire Wire Line
+	7700 3550 7700 3450
+$Comp
+L power:GND #PWR?
+U 1 1 608E9347
+P 7700 3650
+AR Path="/608E9347" Ref="#PWR?"  Part="1" 
+AR Path="/608CDC7C/608E9347" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 7700 3400 50  0001 C CNN
+F 1 "GND" H 7705 3477 50  0000 C CNN
+F 2 "" H 7700 3650 50  0001 C CNN
+F 3 "" H 7700 3650 50  0001 C CNN
+	1    7700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3650 7700 3550
+Connection ~ 7700 3550
+Text Label 8000 3550 0    50   ~ 0
+SENSE
+Text Label 5300 3650 2    50   ~ 0
+SENSE
+$EndSCHEMATC
